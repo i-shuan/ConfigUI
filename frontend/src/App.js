@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { HashRouter, Routes } from 'react-router-dom';
+import { rawMenuItems } from './config/routesConfig';
+import Layouts from './Layouts/Layouts';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+        <Layouts routes={rawMenuItems}>
+          <Routes>
+            {/* <Route path="/" element={<HomePage menuItems={routes} />} />
+            <Route path="/XmlEditor" element={<XmlEditor />} />
+            <Route path="/SecsSignalsTable" element={<SecsSignalsTable />} />
+            <Route path="/FileManagerPage" element={<FileManagerPage />} /> */}
+          </Routes>
+        </Layouts>
+      </HashRouter>
     </div>
   );
 }

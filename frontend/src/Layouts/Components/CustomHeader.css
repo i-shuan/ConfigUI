@@ -1,0 +1,30 @@
+/* 父容器設置 */
+.custom-header {
+  display: flex; /* 使用 Flexbox */
+  flex-direction: row; /* 確保子元素水平排列 */
+  justify-content: space-between; /* 左中右分佈 */
+  align-items: center; /* 垂直居中 */
+  padding: 0 2rem; /* 左右內邊距 */
+  height: 8vh; /* 固定高度 */
+  background-color: #fff; /* 背景顏色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+}
+
+.header-left {
+  flex: 2; /* 左側區域占據 1 倍空間 */
+}
+
+.header-center {
+  flex: 2; /* 中間區域占據 3 倍空間 */
+}
+
+.header-right {
+  flex: 1; /* 右側區域占據 1 倍空間 */
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+}

@@ -1,0 +1,14 @@
+/* Layout 最小高度 */
+.app-layout {
+  min-height: 100vh;
+}
+
+/* Content 填充剩餘空間 */
+.app-content {
+  flex: 1;
+  padding: 2rem; /* 可根據需要調整 */
+}
+
+.ant-layout-header {
+  all: unset; /* 重置所有 Ant Design Header 樣式 */
+}
