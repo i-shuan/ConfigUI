@@ -6,7 +6,8 @@
   align-items: center; /* 垂直居中 */
   padding: 0 0.5rem 0 2rem; /* 左右內邊距 */
   height: 6vh; /* 固定高度 */
-  background-color: transparent; /* 背景顏色 */
+  background-color: #fff; /* 背景顏色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
 }
 
 .custom-header-left {

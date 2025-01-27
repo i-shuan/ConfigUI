@@ -18,12 +18,14 @@
   },
   "plugins": ["react", "prettier", "unused-imports"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "unused-imports/no-unused-imports": "warning",
+    "no-unused-vars": "warn",
+    "no-undef": "warn",
+    "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": [
-      "warning",
+      "warn",
       {
         "vars": "all",
         "varsIgnorePattern": "^_",
@@ -36,8 +38,8 @@
     {
       "files": ["config-overrides.js"],
       "rules": {
-        "no-unused-vars": "off",
-        "unused-imports/no-unused-vars": "off"
+        "no-unused-vars": "warn",
+        "unused-imports/no-unused-vars": "warn"
       }
     },
     {

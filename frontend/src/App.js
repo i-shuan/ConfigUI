@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
-import { HashRouter, Routes } from 'react-router-dom';
-import { routes } from './config/routesConfig';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import { routes } from './config/routesConfigs';
 import Layouts from './Layouts/Layouts';
 
 function App() {
@@ -10,10 +10,13 @@ function App() {
       <HashRouter>
         <Layouts routes={routes}>
           <Routes>
-            {/* <Route path="/" element={<HomePage menuItems={routes} />} />
-            <Route path="/XmlEditor" element={<XmlEditor />} />
-            <Route path="/SecsSignalsTable" element={<SecsSignalsTable />} />
-            <Route path="/FileManagerPage" element={<FileManagerPage />} /> */}
+            {routes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.element}
+              />
+            ))}
           </Routes>
         </Layouts>
       </HashRouter>
