@@ -7,9 +7,9 @@ import {
 } from '@ant-design/icons';
 
 // prettier-ignore
-export const rawMenuItems = [
-    { group: 'MAIN', icon: <HomeOutlined />, label: 'HOME', path: "/", level: 1 },
-    { group: 'MAIN', icon: <SettingOutlined />, label: 'Editor', path: "/XmlEditor", level: 2 },
-    { group: 'MAIN', icon: <BulbOutlined />, label: 'SECS SIGNAL', path: "/SecsSignalsTable",level: 3 },
-    { group: 'MAIN', icon: <FolderViewOutlined />, label: 'FileManager', path: "/FileManagerPage",level: 4 },
+export const routes = [
+    { type: 'MAIN', icon: <HomeOutlined />, label: 'HOME', path: "/", group: 1 },
+    { type: 'MAIN', icon: <SettingOutlined />, label: 'EDITOR', path: "/XmlEditor", group: 2 },
+    { type: 'MAIN', icon: <BulbOutlined />, label: 'SECS SIGNAL', path: "/SecsSignalsTable",group: 3 },
+    { type: 'MAIN', icon: <FolderViewOutlined />, label: 'FILE MANAGER', path: "/FileManagerPage",group: 4 },
 ];

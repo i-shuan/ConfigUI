@@ -1,3 +1,6 @@
+.ant-layout {
+  background-color: #f4f8fb;
+}
 /* Layout 最小高度 */
 .app-layout {
   min-height: 100vh;
@@ -11,4 +14,56 @@
 
 .ant-layout-header {
   all: unset; /* 重置所有 Ant Design Header 樣式 */
+  z-index: 1;
+}
+
+.ant-layout-sider {
+  background-color: var(--blue-900);
+}
+
+.ant-layout-sider-children .ant-btn-variant-outlined {
+  all: unset;
+  margin: 1rem;
+}
+
+.ant-layout-sider-children .ant-menu {
+  background-color: transparent;
+  color: var(--blue-300);
+}
+
+.custom-sider {
+  flex: 0 0 160px !important;
+  max-width: 160px !important;
+  min-width: 160px !important;
+  width: 160px !important;
+}
+
+.custom-sider.collapsed {
+  flex: 0 0 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+  width: 80px !important;
+}
+
+.custom-sider-title {
+  display: flex;
+  align-items: center; /* 垂直置中 */
+  justify-content: space-between; /* 在展開時，標題和按鈕分散對齊 */
+  color: var(--blue-300);
+  margin: 2rem 0.75rem;
+}
+
+.custom-sider-title.collapsed {
+  justify-content: center; /* 縮合時內容居中對齊 */
+}
+
+.custom-sider-title h1 {
+  font-size: 1.5rem !important;
+}
+.custom-sider-btn {
+  background-color: transparent;
+}
+.custom-sider-btn svg {
+  font-size: 1.25rem;
+  color: var(--blue-300);
 }

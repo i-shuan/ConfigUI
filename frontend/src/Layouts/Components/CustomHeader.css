@@ -4,27 +4,37 @@
   flex-direction: row; /* 確保子元素水平排列 */
   justify-content: space-between; /* 左中右分佈 */
   align-items: center; /* 垂直居中 */
-  padding: 0 2rem; /* 左右內邊距 */
-  height: 8vh; /* 固定高度 */
-  background-color: #fff; /* 背景顏色 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  padding: 0 0.5rem 0 2rem; /* 左右內邊距 */
+  height: 6vh; /* 固定高度 */
+  background-color: transparent; /* 背景顏色 */
 }
 
-.header-left {
-  flex: 2; /* 左側區域占據 1 倍空間 */
+.custom-header-left {
+  flex: 1; /* 左側區域占據 1 倍空間 */
+  gap: 1rem;
 }
 
-.header-center {
-  flex: 2; /* 中間區域占據 3 倍空間 */
-}
-
-.header-right {
-  flex: 1; /* 右側區域占據 1 倍空間 */
-}
-
-.header-left,
-.header-center,
-.header-right {
+.custom-header-center {
+  flex: 1; /* 中間區域占據 1 倍空間 */
   display: flex;
   align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+.custom-header-right {
+  flex: 1; /* 右側區域占據 1 倍空間 */
+  display: flex;
+  justify-content: flex-end; /* 靠右對齊 */
+  align-items: center; /* 垂直居中 */
+}
+
+.custom-header-left,
+.custom-header-center,
+.custom-header-right {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+}
+
+.custom-header-search {
+  border-radius: 0.75rem;
 }
