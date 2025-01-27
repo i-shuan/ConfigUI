@@ -1,0 +1,57 @@
+{
+  "pages": {
+    "homePage": {
+      "title": "首頁",
+      "content": {
+        "welcomeMessage": "歡迎來到系統！",
+        "description": "此系統用於管理和分析 ADC.XML 的結構與數據。",
+        "ctaButton": "開始使用"
+      }
+    },
+    "treeTablePage": {
+      "title": "樹狀表格",
+      "content": {
+        "instructions": "請選擇節點以檢視詳細資訊。",
+        "columns": {
+          "level1": "CEID 節點",
+          "level2": "Report ID",
+          "level3": "SVID"
+        },
+        "actions": {
+          "expandAll": "展開所有節點",
+          "collapseAll": "收起所有節點"
+        }
+      }
+    },
+    "detailPage": {
+      "title": "詳細資料",
+      "content": {
+        "header": "選擇的節點詳細資料",
+        "details": {
+          "ceid": "CEID 編號",
+          "reportId": "報告 ID",
+          "svid": "SVID 值"
+        },
+        "actions": {
+          "backToTree": "返回樹狀表格",
+          "export": "匯出"
+        }
+      }
+    },
+    "settingsPage": {
+      "title": "設定頁面",
+      "content": {
+        "header": "系統設定",
+        "options": {
+          "theme": "介面主題",
+          "language": "語言選擇",
+          "notifications": "通知設定"
+        },
+        "actions": {
+          "save": "儲存設定",
+          "reset": "重設"
+        }
+      }
+    }
+  }
+}
