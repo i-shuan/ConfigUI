@@ -4,6 +4,8 @@
 /* Layout 最小高度 */
 .app-layout {
   min-height: 100vh;
+  margin-left: 80px; /* 配合 Sider 的寬度，避免內容被遮擋 */
+  transition: margin-left 0.3s ease; /* 添加過渡效果 */
 }
 
 /* Content 填充剩餘空間 */
@@ -36,6 +38,9 @@
   max-width: 160px !important;
   min-width: 160px !important;
   width: 160px !important;
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
 }
 
 .custom-sider.collapsed {
